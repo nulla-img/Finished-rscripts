@@ -13,7 +13,7 @@ designed using localmaze gui creator
 local LMG2L = {};
 
 -- Players.swagishtman.PlayerGui.bqrbui
-LMG2L["bqrbui_1"] = Instance.new("ScreenGui", game:StarterGui);
+LMG2L["bqrbui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 LMG2L["bqrbui_1"]["Name"] = [[bqrbui]];
 LMG2L["bqrbui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
