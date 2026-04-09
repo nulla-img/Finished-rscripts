@@ -1,0 +1,416 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 41 | Scripts: 9 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.swagishtman.PlayerGui.bqrbui
+LMG2L["bqrbui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["bqrbui_1"]["Name"] = [[bqrbui]];
+LMG2L["bqrbui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton
+LMG2L["ToggleButtonsVisibilityButton_2"] = Instance.new("ImageButton", LMG2L["bqrbui_1"]);
+LMG2L["ToggleButtonsVisibilityButton_2"]["BorderSizePixel"] = 0;
+LMG2L["ToggleButtonsVisibilityButton_2"]["ImageTransparency"] = 1;
+LMG2L["ToggleButtonsVisibilityButton_2"]["BackgroundTransparency"] = 0.08;
+LMG2L["ToggleButtonsVisibilityButton_2"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 22);
+LMG2L["ToggleButtonsVisibilityButton_2"]["ImageColor3"] = Color3.fromRGB(248, 248, 249);
+LMG2L["ToggleButtonsVisibilityButton_2"]["ZIndex"] = 10;
+LMG2L["ToggleButtonsVisibilityButton_2"]["Size"] = UDim2.new(0.03929, 0, 0.09321, 0);
+LMG2L["ToggleButtonsVisibilityButton_2"]["Name"] = [[ToggleButtonsVisibilityButton]];
+LMG2L["ToggleButtonsVisibilityButton_2"]["Position"] = UDim2.new(0.06251, 0, 0.01483, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.ToggleButtonsVisibilityButtonScript
+LMG2L["ToggleButtonsVisibilityButtonScript_3"] = Instance.new("LocalScript", LMG2L["ToggleButtonsVisibilityButton_2"]);
+LMG2L["ToggleButtonsVisibilityButtonScript_3"]["Name"] = [[ToggleButtonsVisibilityButtonScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.ToggleButtonsVisibilityButtonSoundScript
+LMG2L["ToggleButtonsVisibilityButtonSoundScript_4"] = Instance.new("LocalScript", LMG2L["ToggleButtonsVisibilityButton_2"]);
+LMG2L["ToggleButtonsVisibilityButtonSoundScript_4"]["Name"] = [[ToggleButtonsVisibilityButtonSoundScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.UICorner
+LMG2L["UICorner_5"] = Instance.new("UICorner", LMG2L["ToggleButtonsVisibilityButton_2"]);
+LMG2L["UICorner_5"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.ImageLabel
+LMG2L["ImageLabel_6"] = Instance.new("ImageLabel", LMG2L["ToggleButtonsVisibilityButton_2"]);
+LMG2L["ImageLabel_6"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_6"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 249);
+-- LMG2L["ImageLabel_6"]["ImageContent"] = ;
+LMG2L["ImageLabel_6"]["ImageColor3"] = Color3.fromRGB(248, 248, 249);
+LMG2L["ImageLabel_6"]["Image"] = [[rbxassetid://13321848320]];
+LMG2L["ImageLabel_6"]["Size"] = UDim2.new(0.77273, 0, 0.77273, 0);
+LMG2L["ImageLabel_6"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_6"]["Position"] = UDim2.new(0.11364, 0, 0.11364, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.UIAspectRatioConstraint
+LMG2L["UIAspectRatioConstraint_7"] = Instance.new("UIAspectRatioConstraint", LMG2L["ToggleButtonsVisibilityButton_2"]);
+
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons
+LMG2L["buttons_8"] = Instance.new("Frame", LMG2L["bqrbui_1"]);
+LMG2L["buttons_8"]["BorderSizePixel"] = 0;
+LMG2L["buttons_8"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 22);
+LMG2L["buttons_8"]["Size"] = UDim2.new(0.1786, 0, 0.11439, 0);
+LMG2L["buttons_8"]["Position"] = UDim2.new(0.41077, 0, 0.38978, 0);
+LMG2L["buttons_8"]["Name"] = [[buttons]];
+LMG2L["buttons_8"]["BackgroundTransparency"] = 0.5;
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.DestroyUiButton
+LMG2L["DestroyUiButton_9"] = Instance.new("ImageButton", LMG2L["buttons_8"]);
+LMG2L["DestroyUiButton_9"]["BorderSizePixel"] = 0;
+LMG2L["DestroyUiButton_9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["DestroyUiButton_9"]["ZIndex"] = 3;
+LMG2L["DestroyUiButton_9"]["Size"] = UDim2.new(0.22, 0, 0.81481, 0);
+LMG2L["DestroyUiButton_9"]["Name"] = [[DestroyUiButton]];
+LMG2L["DestroyUiButton_9"]["Position"] = UDim2.new(0.515, 0, 0.09259, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.DestroyUiButton.DestroyUiButtonScript
+LMG2L["DestroyUiButtonScript_a"] = Instance.new("LocalScript", LMG2L["DestroyUiButton_9"]);
+LMG2L["DestroyUiButtonScript_a"]["Name"] = [[DestroyUiButtonScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.DestroyUiButton.UICorner
+LMG2L["UICorner_b"] = Instance.new("UICorner", LMG2L["DestroyUiButton_9"]);
+LMG2L["UICorner_b"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.DestroyUiButton.ImageLabel
+LMG2L["ImageLabel_c"] = Instance.new("ImageLabel", LMG2L["DestroyUiButton_9"]);
+LMG2L["ImageLabel_c"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+-- LMG2L["ImageLabel_c"]["ImageContent"] = ;
+LMG2L["ImageLabel_c"]["Image"] = [[rbxassetid://10152135063]];
+LMG2L["ImageLabel_c"]["Size"] = UDim2.new(0.77273, 0, 0.77273, 0);
+LMG2L["ImageLabel_c"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_c"]["Position"] = UDim2.new(0.11364, 0, 0.11364, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton
+LMG2L["ResetButton_d"] = Instance.new("ImageButton", LMG2L["buttons_8"]);
+LMG2L["ResetButton_d"]["BorderSizePixel"] = 0;
+LMG2L["ResetButton_d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ResetButton_d"]["ZIndex"] = 3;
+LMG2L["ResetButton_d"]["Size"] = UDim2.new(0.22, 0, 0.81481, 0);
+LMG2L["ResetButton_d"]["Name"] = [[ResetButton]];
+LMG2L["ResetButton_d"]["Position"] = UDim2.new(0.025, 0, 0.09259, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.UICorner
+LMG2L["UICorner_e"] = Instance.new("UICorner", LMG2L["ResetButton_d"]);
+LMG2L["UICorner_e"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.ResetButtonScript
+LMG2L["ResetButtonScript_f"] = Instance.new("LocalScript", LMG2L["ResetButton_d"]);
+LMG2L["ResetButtonScript_f"]["Name"] = [[ResetButtonScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.ImageLabel
+LMG2L["ImageLabel_10"] = Instance.new("ImageLabel", LMG2L["ResetButton_d"]);
+LMG2L["ImageLabel_10"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_10"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+-- LMG2L["ImageLabel_10"]["ImageContent"] = ;
+LMG2L["ImageLabel_10"]["Image"] = [[rbxassetid://127077202039990]];
+LMG2L["ImageLabel_10"]["Size"] = UDim2.new(0.77273, 0, 0.77273, 0);
+LMG2L["ImageLabel_10"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_10"]["Position"] = UDim2.new(0.11364, 0, 0.11364, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.ResetButtonSoundScript
+LMG2L["ResetButtonSoundScript_11"] = Instance.new("LocalScript", LMG2L["ResetButton_d"]);
+LMG2L["ResetButtonSoundScript_11"]["Name"] = [[ResetButtonSoundScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.UICorner
+LMG2L["UICorner_12"] = Instance.new("UICorner", LMG2L["buttons_8"]);
+LMG2L["UICorner_12"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.MoveAreaIcon
+LMG2L["MoveAreaIcon_13"] = Instance.new("ImageLabel", LMG2L["buttons_8"]);
+LMG2L["MoveAreaIcon_13"]["BorderSizePixel"] = 0;
+LMG2L["MoveAreaIcon_13"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 249);
+-- LMG2L["MoveAreaIcon_13"]["ImageContent"] = ;
+LMG2L["MoveAreaIcon_13"]["ImageColor3"] = Color3.fromRGB(248, 248, 249);
+LMG2L["MoveAreaIcon_13"]["Image"] = [[rbxassetid://5172066892]];
+LMG2L["MoveAreaIcon_13"]["Size"] = UDim2.new(0.17, 0, 0.62963, 0);
+LMG2L["MoveAreaIcon_13"]["BackgroundTransparency"] = 1;
+LMG2L["MoveAreaIcon_13"]["Name"] = [[MoveAreaIcon]];
+LMG2L["MoveAreaIcon_13"]["Position"] = UDim2.new(0.785, 0, 0.18519, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.MoveAreaIcon.UICorner
+LMG2L["UICorner_14"] = Instance.new("UICorner", LMG2L["MoveAreaIcon_13"]);
+LMG2L["UICorner_14"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon
+LMG2L["LeaveButon_15"] = Instance.new("ImageButton", LMG2L["buttons_8"]);
+LMG2L["LeaveButon_15"]["BorderSizePixel"] = 0;
+LMG2L["LeaveButon_15"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["LeaveButon_15"]["ZIndex"] = 3;
+LMG2L["LeaveButon_15"]["Size"] = UDim2.new(0.22, 0, 0.81481, 0);
+LMG2L["LeaveButon_15"]["Name"] = [[LeaveButon]];
+LMG2L["LeaveButon_15"]["Position"] = UDim2.new(0.27, 0, 0.09259, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.UICorner
+LMG2L["UICorner_16"] = Instance.new("UICorner", LMG2L["LeaveButon_15"]);
+LMG2L["UICorner_16"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.LeaveButtonScript
+LMG2L["LeaveButtonScript_17"] = Instance.new("LocalScript", LMG2L["LeaveButon_15"]);
+LMG2L["LeaveButtonScript_17"]["Name"] = [[LeaveButtonScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.LeaveButtonSoundScript
+LMG2L["LeaveButtonSoundScript_18"] = Instance.new("LocalScript", LMG2L["LeaveButon_15"]);
+LMG2L["LeaveButtonSoundScript_18"]["Name"] = [[LeaveButtonSoundScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.ImageLabel
+LMG2L["ImageLabel_19"] = Instance.new("ImageLabel", LMG2L["LeaveButon_15"]);
+LMG2L["ImageLabel_19"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+-- LMG2L["ImageLabel_19"]["ImageContent"] = ;
+LMG2L["ImageLabel_19"]["Image"] = [[rbxassetid://6264845452]];
+LMG2L["ImageLabel_19"]["Size"] = UDim2.new(0.68182, 0, 0.68182, 0);
+LMG2L["ImageLabel_19"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_19"]["Position"] = UDim2.new(0.09091, 0, 0.15909, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ButtonsBackground
+LMG2L["ButtonsBackground_1a"] = Instance.new("Frame", LMG2L["buttons_8"]);
+LMG2L["ButtonsBackground_1a"]["BorderSizePixel"] = 0;
+LMG2L["ButtonsBackground_1a"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 45);
+LMG2L["ButtonsBackground_1a"]["Size"] = UDim2.new(0.76, 0, 1, 0);
+LMG2L["ButtonsBackground_1a"]["Name"] = [[ButtonsBackground]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ButtonsBackground.UICorner
+LMG2L["UICorner_1b"] = Instance.new("UICorner", LMG2L["ButtonsBackground_1a"]);
+LMG2L["UICorner_1b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ButtonsConnector
+LMG2L["ButtonsConnector_1c"] = Instance.new("Frame", LMG2L["buttons_8"]);
+LMG2L["ButtonsConnector_1c"]["ZIndex"] = 2;
+LMG2L["ButtonsConnector_1c"]["BorderSizePixel"] = 0;
+LMG2L["ButtonsConnector_1c"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 22);
+LMG2L["ButtonsConnector_1c"]["Size"] = UDim2.new(0.71, 0, 0.81481, 0);
+LMG2L["ButtonsConnector_1c"]["Position"] = UDim2.new(0.025, 0, 0.09259, 0);
+LMG2L["ButtonsConnector_1c"]["Name"] = [[ButtonsConnector]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ButtonsConnector.UICorner
+LMG2L["UICorner_1d"] = Instance.new("UICorner", LMG2L["ButtonsConnector_1c"]);
+LMG2L["UICorner_1d"]["CornerRadius"] = UDim.new(0.5, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.UIDragDetector
+LMG2L["UIDragDetector_1e"] = Instance.new("UIDragDetector", LMG2L["buttons_8"]);
+
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.UIAspectRatioConstraint
+LMG2L["UIAspectRatioConstraint_1f"] = Instance.new("UIAspectRatioConstraint", LMG2L["buttons_8"]);
+LMG2L["UIAspectRatioConstraint_1f"]["AspectRatio"] = 3.7037;
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton
+LMG2L["ResetUiPosButton_20"] = Instance.new("ImageButton", LMG2L["bqrbui_1"]);
+LMG2L["ResetUiPosButton_20"]["BorderSizePixel"] = 0;
+LMG2L["ResetUiPosButton_20"]["ImageTransparency"] = 1;
+LMG2L["ResetUiPosButton_20"]["BackgroundTransparency"] = 0.08;
+LMG2L["ResetUiPosButton_20"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 22);
+LMG2L["ResetUiPosButton_20"]["ImageColor3"] = Color3.fromRGB(248, 248, 249);
+LMG2L["ResetUiPosButton_20"]["ZIndex"] = 10;
+LMG2L["ResetUiPosButton_20"]["Size"] = UDim2.new(0.03929, 0, 0.09321, 0);
+LMG2L["ResetUiPosButton_20"]["Name"] = [[ResetUiPosButton]];
+LMG2L["ResetUiPosButton_20"]["Position"] = UDim2.new(0.01429, 0, 0.01483, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.UICorner
+LMG2L["UICorner_21"] = Instance.new("UICorner", LMG2L["ResetUiPosButton_20"]);
+LMG2L["UICorner_21"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.ResetUiPosButtonScript
+LMG2L["ResetUiPosButtonScript_22"] = Instance.new("LocalScript", LMG2L["ResetUiPosButton_20"]);
+LMG2L["ResetUiPosButtonScript_22"]["Name"] = [[ResetUiPosButtonScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.ImageLabel
+LMG2L["ImageLabel_23"] = Instance.new("ImageLabel", LMG2L["ResetUiPosButton_20"]);
+LMG2L["ImageLabel_23"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_23"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 249);
+-- LMG2L["ImageLabel_23"]["ImageContent"] = ;
+LMG2L["ImageLabel_23"]["ImageColor3"] = Color3.fromRGB(248, 248, 249);
+LMG2L["ImageLabel_23"]["Image"] = [[rbxassetid://5172066892]];
+LMG2L["ImageLabel_23"]["Size"] = UDim2.new(0.59091, 0, 0.59091, 0);
+LMG2L["ImageLabel_23"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_23"]["Position"] = UDim2.new(0.20455, 0, 0.20455, 0);
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.ResetUiPosButtonSoundScript
+LMG2L["ResetUiPosButtonSoundScript_24"] = Instance.new("LocalScript", LMG2L["ResetUiPosButton_20"]);
+LMG2L["ResetUiPosButtonSoundScript_24"]["Name"] = [[ResetUiPosButtonSoundScript]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.UIAspectRatioConstraint
+LMG2L["UIAspectRatioConstraint_25"] = Instance.new("UIAspectRatioConstraint", LMG2L["ResetUiPosButton_20"]);
+
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.Sounds
+LMG2L["Sounds_26"] = Instance.new("Folder", LMG2L["bqrbui_1"]);
+LMG2L["Sounds_26"]["Name"] = [[Sounds]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.Sounds.DestroyUiSound
+LMG2L["DestroyUiSound_27"] = Instance.new("Sound", LMG2L["Sounds_26"]);
+LMG2L["DestroyUiSound_27"]["Name"] = [[DestroyUiSound]];
+LMG2L["DestroyUiSound_27"]["SoundId"] = [[rbxassetid://12221984]];
+LMG2L["DestroyUiSound_27"]["PlayOnRemove"] = true;
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.Sounds.ButtonSound
+LMG2L["ButtonSound_28"] = Instance.new("Sound", LMG2L["Sounds_26"]);
+LMG2L["ButtonSound_28"]["Name"] = [[ButtonSound]];
+LMG2L["ButtonSound_28"]["SoundId"] = [[rbxassetid://12221976]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.Sounds.ToggleSound
+LMG2L["ToggleSound_29"] = Instance.new("Sound", LMG2L["Sounds_26"]);
+LMG2L["ToggleSound_29"]["Name"] = [[ToggleSound]];
+LMG2L["ToggleSound_29"]["SoundId"] = [[rbxassetid://12222183]];
+
+
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.ToggleButtonsVisibilityButtonScript
+local function C_3()
+	local script = LMG2L["ToggleButtonsVisibilityButtonScript_3"];
+	local ui = script.Parent.Parent:WaitForChild("buttons")	
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	      ui.Visible = not ui.Visible	
+	end)	
+end;
+task.spawn(C_3);
+-- Players.swagishtman.PlayerGui.bqrbui.ToggleButtonsVisibilityButton.ToggleButtonsVisibilityButtonSoundScript
+local function C_4()
+	local script = LMG2L["ToggleButtonsVisibilityButtonSoundScript_4"];
+	local button = script.Parent	
+	local sound = script.Parent.Parent:WaitForChild("Sounds"):WaitForChild("ToggleSound")	
+	
+	button.MouseButton1Click:Connect(function()	
+	      sound:Play()	
+	end)	
+end;
+task.spawn(C_4);
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.DestroyUiButton.DestroyUiButtonScript
+local function C_a()
+	local script = LMG2L["DestroyUiButtonScript_a"];
+	local button = script.Parent	
+	local ui = script.Parent.Parent.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	    if ui then	
+	        ui:Destroy()	
+	    end	
+	end)	
+end;
+task.spawn(C_a);
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.ResetButtonScript
+local function C_f()
+	local script = LMG2L["ResetButtonScript_f"];
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	    local player = game.Players.LocalPlayer	
+	    if player and player.Character then	
+	        player.Character:BreakJoints()	
+	    end	
+	end)	
+end;
+task.spawn(C_f);
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.ResetButton.ResetButtonSoundScript
+local function C_11()
+	local script = LMG2L["ResetButtonSoundScript_11"];
+	local button = script.Parent	
+	local sound = script.Parent.Parent.Parent:WaitForChild("Sounds"):WaitForChild("ButtonSound")	
+	
+	button.MouseButton1Click:Connect(function()	
+	      sound:Play()	
+	end)	
+end;
+task.spawn(C_11);
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.LeaveButtonScript
+local function C_17()
+	local script = LMG2L["LeaveButtonScript_17"];
+	local Players = game:GetService("Players")	
+	local player = Players.LocalPlayer	
+	local Button = script.Parent	
+	
+	Button.MouseButton1Click:Connect(function()	
+	    if player then	
+	        player:Kick("bye :3")	
+	    end	
+	end)	
+end;
+task.spawn(C_17);
+-- Players.swagishtman.PlayerGui.bqrbui.buttons.LeaveButon.LeaveButtonSoundScript
+local function C_18()
+	local script = LMG2L["LeaveButtonSoundScript_18"];
+	local button = script.Parent	
+	local sound = script.Parent.Parent.Parent:WaitForChild("Sounds"):WaitForChild("ButtonSound")	
+	
+	button.MouseButton1Click:Connect(function()	
+	      sound:Play()	
+	end)	
+end;
+task.spawn(C_18);
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.ResetUiPosButtonScript
+local function C_22()
+	local script = LMG2L["ResetUiPosButtonScript_22"];
+	local ui = script.Parent.Parent:WaitForChild("buttons")	
+	local button = script.Parent	
+	
+	button.MouseButton1Click:Connect(function()	
+	      ui.Position = UDim2.new(0, 460, 0, 184)	
+	end)	
+end;
+task.spawn(C_22);
+-- Players.swagishtman.PlayerGui.bqrbui.ResetUiPosButton.ResetUiPosButtonSoundScript
+local function C_24()
+	local script = LMG2L["ResetUiPosButtonSoundScript_24"];
+	local button = script.Parent	
+	local sound = script.Parent.Parent:WaitForChild("Sounds"):WaitForChild("ButtonSound")	
+	
+	button.MouseButton1Click:Connect(function()	
+	      sound:Play()	
+	end)	
+end;
+task.spawn(C_24);
+
+return LMG2L["bqrbui_1"], require;
