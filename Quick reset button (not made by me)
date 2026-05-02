@@ -1,0 +1,141 @@
+--[=[
+
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+
+88      88    88    88            odD'      88      88    88 88ooo88 
+
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+
+]=]
+
+-- Instances: 6 | Scripts: 0 | Modules: 0 | Tags: 0
+
+local LMG2L = {};
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui
+
+LMG2L["QuickResetGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+
+LMG2L["QuickResetGui_1"]["Name"] = [[QuickResetGui]];
+
+LMG2L["QuickResetGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui.Main
+
+LMG2L["Main_2"] = Instance.new("Frame", LMG2L["QuickResetGui_1"]);
+
+LMG2L["Main_2"]["BorderSizePixel"] = 0;
+
+LMG2L["Main_2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+LMG2L["Main_2"]["Size"] = UDim2.new(0, 116, 0, 56);
+
+LMG2L["Main_2"]["Position"] = UDim2.new(0.26033, 0, 0.07103, 0);
+
+LMG2L["Main_2"]["Name"] = [[Main]];
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui.Main.UICorner
+
+LMG2L["UICorner_3"] = Instance.new("UICorner", LMG2L["Main_2"]);
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui.Main.ResetBtn
+
+LMG2L["ResetBtn_4"] = Instance.new("TextButton", LMG2L["Main_2"]);
+
+LMG2L["ResetBtn_4"]["BorderSizePixel"] = 0;
+
+LMG2L["ResetBtn_4"]["BackgroundColor3"] = Color3.fromRGB(68, 68, 68);
+
+LMG2L["ResetBtn_4"]["BackgroundTransparency"] = 1;
+
+LMG2L["ResetBtn_4"]["Size"] = UDim2.new(0, 82, 0, 48);
+
+LMG2L["ResetBtn_4"]["Text"] = [[]];
+
+LMG2L["ResetBtn_4"]["Name"] = [[ResetBtn]];
+
+LMG2L["ResetBtn_4"]["Position"] = UDim2.new(0.03448, 0, 0.07143, 0);
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui.Main.ResetBtn.ResetIcon
+
+LMG2L["ResetIcon_5"] = Instance.new("ImageLabel", LMG2L["ResetBtn_4"]);
+
+LMG2L["ResetIcon_5"]["BorderSizePixel"] = 0;
+
+LMG2L["ResetIcon_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+-- LMG2L["ResetIcon_5"]["ImageContent"] = ;
+
+LMG2L["ResetIcon_5"]["Image"] = [[rbxassetid://127077202039990]];
+
+LMG2L["ResetIcon_5"]["Size"] = UDim2.new(0, 32, 0, 32);
+
+LMG2L["ResetIcon_5"]["BackgroundTransparency"] = 1;
+
+LMG2L["ResetIcon_5"]["Name"] = [[ResetIcon]];
+
+LMG2L["ResetIcon_5"]["Position"] = UDim2.new(0.32927, 0, 0.16667, 0);
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui.Main.DraggingIcon
+
+LMG2L["DraggingIcon_6"] = Instance.new("ImageLabel", LMG2L["Main_2"]);
+
+LMG2L["DraggingIcon_6"]["BorderSizePixel"] = 0;
+
+LMG2L["DraggingIcon_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+-- LMG2L["DraggingIcon_6"]["ImageContent"] = ;
+
+LMG2L["DraggingIcon_6"]["Image"] = [[rbxassetid://5172066892]];
+
+LMG2L["DraggingIcon_6"]["Size"] = UDim2.new(0, 18, 0, 18);
+
+LMG2L["DraggingIcon_6"]["BackgroundTransparency"] = 1;
+
+LMG2L["DraggingIcon_6"]["Name"] = [[DraggingIcon]];
+
+LMG2L["DraggingIcon_6"]["Position"] = UDim2.new(0.81034, 0, 0.32143, 0);
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+-- Players.1x1x1x1xlf.PlayerGui.QuickResetGui
+
+LMG2L["QuickResetGui_1"].Parent = game:GetService("CoreGui")
+
+LMG2L["QuickResetGui_1"].IgnoreGuiInset = true
+
+LMG2L["QuickResetGui_1"].ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+-- Dragging
+
+LMG2L["Main_2"].Active = true
+
+LMG2L["Main_2"].Draggable = true
+
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+LMG2L["ResetBtn_4"].MouseButton1Click:Connect(function()
+
+    if player.Character then
+
+        player.Character:BreakJoints()
+
+    end
+
+end)
+
+------------------------------------------------------------
+
+return LMG2L["QuickResetGui_1"], require;
