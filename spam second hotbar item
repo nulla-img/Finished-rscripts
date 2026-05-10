@@ -1,0 +1,119 @@
+-- LocalScript (put in StarterPlayerScripts)
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local player = Players.LocalPlayer
+
+-- Create GUI once and reuse
+local gui = Instance.new("ScreenGui")
+gui.Name = "SpamEquipGui"
+gui.ResetOnSpawn = false -- important to survive respawn in some contexts
+gui.Parent = player:WaitForChild("PlayerGui")
+
+-- Floating button
+local btn = Instance.new("TextButton")
+btn.Size = UDim2.new(0,100,0,40)
+btn.Position = UDim2.new(0.8, -50, 0.2, -20)
+btn.AnchorPoint = Vector2.new(0.5,0.5)
+btn.BackgroundTransparency = 0.2
+btn.BackgroundColor3 = Color3.fromRGB(30,30,30)
+btn.TextColor3 = Color3.new(1,1,1)
+btn.Text = "Spam: OFF"
+btn.Parent = gui
+btn.ZIndex = 10
+btn.Active = true
+btn.Draggable = true
+
+local toggled = false
+local spamConnection
+local spamDelay = 0.12
+
+local function findSecondHotbarTool()
+    local char = player.Character
+    if char then
+        local count = 0
+        for _, v in ipairs(char:GetChildren()) do
+            if v:IsA("Tool") then
+                count = count + 1
+                if count == 2 then return v end
+            end
+        end
+    end
+    local pack = player:FindFirstChild("Backpack")
+    if pack then
+        local count = 0
+        for _, v in ipairs(pack:GetChildren()) do
+            if v:IsA("Tool") then
+                count = count + 1
+                if count == 2 then return v end
+            end
+        end
+    end
+    return nil
+end
+
+local function equipTool(tool)
+    if not tool then return end
+    local char = player.Character
+    if not char then return end
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if humanoid and tool.Parent ~= char then
+        pcall(function() humanoid:EquipTool(tool) end)
+    else
+        pcall(function() tool.Parent = char end)
+    end
+end
+
+local function unequipAll()
+    local char = player.Character
+    if not char then return end
+    local humanoid = char:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        pcall(function() humanoid:UnequipTools() end)
+    else
+        local pack = player:FindFirstChild("Backpack")
+        if pack then
+            for _, t in ipairs(char:GetChildren()) do
+                if t:IsA("Tool") then
+                    pcall(function() t.Parent = pack end)
+                end
+            end
+        end
+    end
+end
+
+local function startSpamming()
+    if spamConnection then return end
+    toggled = true
+    spawn(function()
+        while toggled do
+            local tool = findSecondHotbarTool()
+            if tool then
+                equipTool(tool)
+                wait(spamDelay)
+                unequipAll()
+                wait(spamDelay)
+            else
+                wait(0.5)
+            end
+        end
+    end)
+end
+
+local function stopSpamming()
+    toggled = false
+    if spamConnection then
+        spamConnection:Disconnect()
+        spamConnection = nil
+    end
+end
+
+btn.MouseButton1Click:Connect(function()
+    toggled = not toggled
+    btn.Text = toggled and "Spam: ON" or "Spam: OFF"
+    if toggled then startSpamming() else stopSpamming() end
+end)
+
+player.CharacterRemoving:Connect(function()
+    stopSpamming()
+end)
