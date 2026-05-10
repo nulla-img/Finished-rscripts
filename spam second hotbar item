@@ -25,7 +25,7 @@ btn.Draggable = true
 
 local toggled = false
 local spamConnection
-local spamDelay = 0.12
+local spamDelay = 0.01
 
 local function findSecondHotbarTool()
     local char = player.Character
